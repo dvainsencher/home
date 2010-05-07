@@ -1,1 +1,11 @@
-/home/daniel/.gitconfig
+[color]
+    ui = auto
+    diff = auto
+    status = auto
+    branch = auto
+[user]
+    name = Daniel Vainsencher
+	email = dvainsencher@gmail.com
+[push]
+	default = current
+
