@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/etc/lighttpd/conf-enabled'
+let g:netrw_dirhist_2='/home/daniel/.vim'
+let g:netrw_dirhist_3='/home/daniel/projetos/bsgi-env'
+let g:netrw_dirhist_4='/home/daniel/projetos/clientes/bsgi/repositorios/projetos-env/bsgi/projetos/bsgi'
+let g:netrw_dirhist_5='/home/daniel/projetos/clientes/bsgi/repositorios/projetos-env/bsgi/projetos/bsgi/bsgidw'
+let g:netrw_dirhist_6='/home/daniel/projetos/clientes/bsgi/repositorios/projetos-env/bsgi/projetos/bsgi/robot/tarefas'
