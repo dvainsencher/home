@@ -1,0 +1,14 @@
+sudo apt-get install git
+
+mkdir ~/prj
+cd ~/prj
+
+git clone git@github.com:dvainsencher/home.git
+
+#very powerful shell tool
+sudo pip install powerline-shell
+
+sudo add-apt-repository ppa:ultradvorka/ppa && sudo apt-get update && sudo apt-get install hstr && hstr --show-configuration >> ~/.bashrc && . ~/.bashrc
+
+git clone git@github.com:mrzool/bash-sensible.git
+
