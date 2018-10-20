@@ -98,8 +98,19 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-source /etc/profile.d/autojump.bash
-
-export PYTHONSTARTUP=$HOME/.pythonrc
-export PS1='\[\e[32m\][\u@\h] \[\e[33m\w\]\n\[\e[1;34m\][\t]\[\e[0m\] \$ '
 export EDITOR=vim
+
+#Overide bash settings with sensible defaults
+if [ -f ~/prj/bash-sensible/sensible.bash ]; then
+   source ~/prj/bash-sensible/sensible.bash
+fi
+
+
+#activate power shell
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
