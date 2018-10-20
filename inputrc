@@ -26,3 +26,14 @@ set completion-ignore-case on
 # completions.
 # A single <Tab>  will suffice.
 set show-all-if-ambiguous on
+
+# do not bell on tab-completion
+set bell-style none
+set bell-style visible
+
+# these allow you to start typing a command
+# and use the up/down arrow to auto complete
+# from commands in your history
+"\e[B": history-search-forward
+"\e[A": history-search-backward
+
