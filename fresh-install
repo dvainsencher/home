@@ -1,4 +1,13 @@
-sudo apt-get install git
+sudo apt-get update
+sudo apt-get install git, docker
+
+#Dropbox
+#pycharm
+#copyQ
+#albert
+#pomodoro
+#sublime
+#calibre
 
 mkdir ~/prj
 cd ~/prj
